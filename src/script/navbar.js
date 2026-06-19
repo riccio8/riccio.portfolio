@@ -42,4 +42,19 @@ buttons.forEach((btn) => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   });
+
+  document.getElementById("about").addEventListener("click", () => {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("home").addEventListener("click", () => {
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("projects").addEventListener("click", () => {
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("contacts").addEventListener("click", () => {
+    document.getElementById("contacts").scrollIntoView({ behavior: "smooth" });
+  });
+
+
 });
