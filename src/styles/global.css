@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+#selector {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+section,
+body {
+    scroll-margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Sora', sans-serif;
+}

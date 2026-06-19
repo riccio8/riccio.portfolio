@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("#github, #facebook, #instagram, #twitter");
+const buttons = document.querySelectorAll(".nav-btn");
 const selector = document.getElementById("selector");
 
 // Funzione helper per resettare l'animazione di scomparsa del vecchio logo
@@ -16,25 +16,30 @@ function triggerBgAnimation(bgIcon) {
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", function () {
-    // 1. Calcola la posizione esatta del pulsante rispetto alla barra genitore
+    // 1. Posizione selector
     const parentLeft = btn.parentElement.getBoundingClientRect().left;
     const btnLeft = btn.getBoundingClientRect().left;
     const exactX = btnLeft - parentLeft;
-
-    // 2. Muove fisicamente il selettore al pixel esatto tramite CSS Inline
     selector.style.transform = `translateX(${exactX}px)`;
 
-    // 3. Gestisce l'accensione del colore (Bianco per il cliccato, Grigio per gli altri)
+    // 2. Colori
     buttons.forEach((b) => {
+      b.classList.remove("fill-white", "fill-[#75747A]");
       if (b === btn) {
-        b.classList.replace("fill-[#75747A]", "fill-white");
+        b.classList.add("fill-white");
       } else {
-        b.classList.replace("fill-white", "fill-[#75747A]");
+        b.classList.add("fill-[#75747A]");
       }
     });
 
-    // 4. Avvia l'animazione dell'icona fantasma in background
+    // 3. Animazione bg
     const bgIcon = btn.querySelector("box-icon[id$='-bg']");
     triggerBgAnimation(bgIcon);
+
+    // 4. SCROLL 
+    const section = document.getElementById(btn.id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });

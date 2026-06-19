@@ -8,6 +8,10 @@ const nome = "Riccardo";
   <!-- Navbar -->
 
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="../script/navbar.js"></script>
@@ -15,83 +19,68 @@ const nome = "Riccardo";
 
   <nav class="fixed top-0 left-0 w-full z-50 p-4">
     <div class="w-full flex justify-center items-center">
-      <!-- Manteniamo la capsula larga col justify-between -->
       <div
-        class="w-[75%] md:w-[40%] lg:w-[25%] flex justify-between items-center bg-[#1A1920] p-4 px-8 rounded-full relative shadow-lg"
+        class="w-[75%] md:w-[40%] lg:w-[25%] flex justify-between items-center bg-slate-900 p-4 px-8 rounded-full relative shadow-lg"
       >
-        <!-- Sostituito w-15 h-15 con w-[60px] h-[60px] -->
+        <!-- HOME -->
         <div
-          id="github"
-          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-white cursor-pointer transition-color duration-500 ease-in-out"
+          id="home"
+          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-white cursor-pointer transition-color duration-500 ease-in-out"
         >
           <box-icon
-            name="github"
-            id="gh-bg"
-            type="logo"
+            name="home"
+            id="home-bg"
             class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
           ></box-icon>
-          <box-icon
-            name="github"
-            type="logo"
-            animation="tada-hover"
-            class="z-10"></box-icon>
+          <box-icon name="home" animation="tada-hover" class="z-10"></box-icon>
         </div>
 
+        <!-- INFO -->
         <div
-          id="facebook"
-          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          id="info"
+          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
         >
           <box-icon
-            name="facebook-circle"
-            id="fb-bg"
-            type="logo"
+            name="info-circle"
+            id="info-bg"
             class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
           ></box-icon>
-          <box-icon
-            name="facebook-circle"
-            type="logo"
-            animation="tada-hover"
-            class="z-10"></box-icon>
+          <box-icon name="info-circle" animation="tada-hover" class="z-10"
+          ></box-icon>
         </div>
 
+        <!-- PROGETTI -->
         <div
-          id="instagram"
-          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          id="projects"
+          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
         >
           <box-icon
-            name="instagram-alt"
-            id="ig-bg"
-            type="logo"
+            name="folder"
+            id="projects-bg"
             class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
           ></box-icon>
-          <box-icon
-            name="instagram-alt"
-            type="logo"
-            animation="tada-hover"
-            class="z-10"></box-icon>
+          <box-icon name="folder" animation="tada-hover" class="z-10"
+          ></box-icon>
         </div>
 
+        <!-- CONTATTI -->
         <div
-          id="twitter"
-          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          id="contacts"
+          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
         >
           <box-icon
-            name="twitter"
-            id="tw-bg"
-            type="logo"
+            name="envelope"
+            id="contacts-bg"
             class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
           ></box-icon>
-          <box-icon
-            name="twitter"
-            type="logo"
-            animation="tada-hover"
-            class="z-10"></box-icon>
+          <box-icon name="envelope" animation="tada-hover" class="z-10"
+          ></box-icon>
         </div>
 
-        <!-- Il selettore ora usa direttamente le proprietà CSS inline per lo spostamento millimetrico -->
+        <!-- SELECTOR -->
         <div
           id="selector"
-          class="w-[60px] h-[60px] flex justify-center items-center rounded-full bg-[#131217] absolute left-0 transition duration-500 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
+          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full bg-[#131217] absolute left-0 transition duration-500 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
           style="transform: translateX(32px);"
         >
         </div>
@@ -100,9 +89,50 @@ const nome = "Riccardo";
   </nav>
 
   <!-- Hero Section -->
+  <section
+    class="h-screen flex flex-col items-center justify-center text-center px-4"
+  >
+    <h1 class="text-6xl md:text-8xl font-bold tracking-tight">
+      Riccardo Adami
+    </h1>
 
+    <h2 class="text-lg md:text-2xl text-slate-300 mt-3">
+      Embedded & Web Developer
+    </h2>
+
+    <p
+      class="text-base md:text-xl text-slate-400 max-w-xl mt-6 leading-relaxed"
+    >
+      Lavoro su sistemi embedded e sto iniziando a creare interfacce web
+      moderne.
+      <span class="block mt-2">
+        Focus su performance, efficienza e software leggero.
+      </span>
+    </p>
+
+    <a
+      href="#projects"
+      class="mt-16 w-12 h-12 flex items-center justify-center rounded-full
+          bg-white/5 backdrop-blur-xl border border-white/10
+          hover:bg-white/10 transition"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-slate-200 animate-bounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </a>
+  </section>
   <!-- Sezione Progetti -->
-
+  <section id="projects" class="min-h-screen"></section>
   <!-- Card Progetto 1: IdroStoria (Sito dell'acqua) -->
 
   <!-- Card Progetto 2: Servizio Freelance -->

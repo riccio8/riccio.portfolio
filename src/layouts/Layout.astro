@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 interface Props {
 	title: string;
@@ -18,7 +18,17 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-slate-950 text-slate-100 font-sans antialiased">
-		<slot /> <!--index.astro -->
-	</body>
+	<body class="bg-[#070A12] text-slate-100 font-sans antialiased relative overflow-hidden">
+
+  <!-- glow principale -->
+  <div class="pointer-events-none absolute inset-0
+    bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.35),transparent_55%)]">
+  </div>
+
+  <!-- glow secondario  -->
+  <div class="pointer-events-none absolute inset-0
+    bg-[radial-gradient(circle_at_bottom,rgba(147,197,253,0.18),transparent_60%)]">
+  </div>
+  <slot></slot>
+</body>
 </html>
