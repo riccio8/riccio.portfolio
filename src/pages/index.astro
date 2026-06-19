@@ -1,29 +1,113 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 const nome = "Riccardo";
 ---
 
 <Layout title="Riccardo Developer Portfolio">
-	<!-- Navbar -->
+  <!-- Navbar -->
 
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="../script/navbar.js"></script>
+  </head>
 
-	<!-- Hero Section -->
+  <nav class="fixed top-0 left-0 w-full z-50 p-4">
+    <div class="w-full flex justify-center items-center">
+      <!-- Manteniamo la capsula larga col justify-between -->
+      <div
+        class="w-[75%] md:w-[40%] lg:w-[25%] flex justify-between items-center bg-[#1A1920] p-4 px-8 rounded-full relative shadow-lg"
+      >
+        <!-- Sostituito w-15 h-15 con w-[60px] h-[60px] -->
+        <div
+          id="github"
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-white cursor-pointer transition-color duration-500 ease-in-out"
+        >
+          <box-icon
+            name="github"
+            id="gh-bg"
+            type="logo"
+            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+          ></box-icon>
+          <box-icon
+            name="github"
+            type="logo"
+            animation="tada-hover"
+            class="z-10"></box-icon>
+        </div>
 
+        <div
+          id="facebook"
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+        >
+          <box-icon
+            name="facebook-circle"
+            id="fb-bg"
+            type="logo"
+            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+          ></box-icon>
+          <box-icon
+            name="facebook-circle"
+            type="logo"
+            animation="tada-hover"
+            class="z-10"></box-icon>
+        </div>
 
-	<!-- Sezione Progetti -->
-	
+        <div
+          id="instagram"
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+        >
+          <box-icon
+            name="instagram-alt"
+            id="ig-bg"
+            type="logo"
+            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+          ></box-icon>
+          <box-icon
+            name="instagram-alt"
+            type="logo"
+            animation="tada-hover"
+            class="z-10"></box-icon>
+        </div>
 
-	
-			<!-- Card Progetto 1: IdroStoria (Sito dell'acqua) -->
-		
+        <div
+          id="twitter"
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+        >
+          <box-icon
+            name="twitter"
+            id="tw-bg"
+            type="logo"
+            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+          ></box-icon>
+          <box-icon
+            name="twitter"
+            type="logo"
+            animation="tada-hover"
+            class="z-10"></box-icon>
+        </div>
 
-			<!-- Card Progetto 2: Servizio Freelance -->
+        <!-- Il selettore ora usa direttamente le proprietà CSS inline per lo spostamento millimetrico -->
+        <div
+          id="selector"
+          class="w-[60px] h-[60px] flex justify-center items-center rounded-full bg-[#131217] absolute left-0 transition duration-500 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
+          style="transform: translateX(32px);"
+        >
+        </div>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
 
-	<!-- Sezione Contatti -->
-	
+  <!-- Sezione Progetti -->
 
-	<!-- Footer -->
+  <!-- Card Progetto 1: IdroStoria (Sito dell'acqua) -->
 
+  <!-- Card Progetto 2: Servizio Freelance -->
+
+  <!-- Sezione Contatti -->
+
+  <!-- Footer -->
 </Layout>
