@@ -131,12 +131,156 @@ const nome = "Riccardo";
       </svg>
     </a>
   </section>
+
+  
   <!-- Sezione Info -->
-  <section
-    id="about"
-    class="min-h-screen pt-24 flex items-center justify-center text-3xl"
-  >
-    Chi sono
+  <section id="about" class="min-h-screen pt-32 pb-16 text-white px-4 md:px-8">
+    <div class="max-w-4xl mx-auto">
+      <!-- Intestazione Sezione -->
+      <div class="mb-16 text-center md:text-left">
+        <h2
+          class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-2"
+        >
+          Il mio percorso
+        </h2>
+        <h3 class="text-4xl font-bold tracking-tight">
+          Esperienza ed Istruzione
+        </h3>
+      </div>
+
+      <!-- Griglia Principale: Timeline a sinistra, Card a destra -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Colonna Timeline (Senza sfondi aggiuntivi) -->
+        <div
+          class="md:col-span-2 space-y-12 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-[2px] before:bg-slate-800"
+        >
+          <!-- Blocco 1: Scuola -->
+          <div class="relative pl-10 group">
+            <!-- Pallino della Timeline -->
+            <div
+              class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-blue-500 border-4 border-slate-950 group-hover:scale-125 transition"
+            >
+            </div>
+
+            <div class="flex items-center gap-3 mb-1">
+              <span
+                class="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-medium border border-blue-500/20"
+                >In Corso</span
+              >
+              <span class="text-sm text-slate-400">2022 — Presente</span>
+            </div>
+            <h4 class="text-xl font-semibold text-slate-100">
+              Diploma Tecnico in Informatica
+            </h4>
+            <p class="text-sm text-slate-400 font-medium mb-3">
+              ITT G. Marconi - Rovereto
+            </p>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Sto affrontando l'indirizzo informatico focalizzato sull'analisi,
+              progettazione di sistemi software complessi e gestione delle reti.
+              Questo percorso mi sta dando le basi metodologiche sia per il
+              software leggero che per l'integrazione con i sistemi fisici.
+            </p>
+          </div>
+
+          <!-- Blocco 2: Stage Estivo / Alternanza -->
+          <div class="relative pl-10 group">
+            <div
+              class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-emerald-500 border-4 border-slate-950 group-hover:scale-125 transition"
+            >
+            </div>
+
+            <div class="flex items-center gap-3 mb-1">
+              <span
+                class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-medium border border-emerald-500/20"
+                >Completato</span
+              >
+              <span class="text-sm text-slate-400">Estate 2025</span>
+            </div>
+            <h4 class="text-xl font-semibold text-slate-100">
+              Tirocinio Formativo (Sviluppo Software)
+            </h4>
+            <p class="text-sm text-slate-400 font-medium mb-3">
+              Nome Azienda / Esperienza
+            </p>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Esperienza aziendale focalizzata sulla manutenzione di
+              applicativi, ottimizzazione di processi interni e introduzione
+              alle metodologie agili di sviluppo.
+            </p>
+          </div>
+
+          <!-- Blocco 3: Progetti Extra o Scolastici -->
+          <div class="relative pl-10 group">
+            <div
+              class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-purple-500 border-4 border-slate-950 group-hover:scale-125 transition"
+            >
+            </div>
+
+            <div class="flex items-center gap-3 mb-1">
+              <span
+                class="text-xs px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 font-medium border border-purple-500/20"
+                >Progetto</span
+              >
+              <span class="text-sm text-slate-400">Maggio 2026</span>
+            </div>
+            <h4 class="text-xl font-semibold text-slate-100">
+              Progetto Scolastico / Attività Extra
+            </h4>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Inserisci qui un progetto forte fatto a scuola o un'attività (es.
+              orientamento, laboratori aperti, o gare di informatica) che
+              dimostri il tuo impegno oltre le ore di lezione.
+            </p>
+          </div>
+        </div>
+
+        <!-- Colonna Laterale: Card in stile Navbar (bg-slate-900/60 + blur) -->
+        <div class="space-y-8">
+          <!-- Card Certificazioni -->
+          <div
+            class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl backdrop-blur-xl shadow-lg"
+          >
+            <h4
+              class="text-lg font-semibold text-slate-200 mb-4 flex items-center gap-2"
+            >
+              <box-icon name="award" class="fill-blue-400 w-5 h-5"></box-icon> Certificazioni
+            </h4>
+            <ul class="space-y-4">
+              <li class="border-l-2 border-blue-500 pl-3">
+                <p class="text-sm font-medium text-slate-200">Cisco CCNA</p>
+                <p class="text-xs text-slate-500">Networking Academy</p>
+              </li>
+              <li class="border-l-2 border-blue-500 pl-3">
+                <p class="text-sm font-medium text-slate-200">
+                  Cybersecurity / Altro corso
+                </p>
+                <p class="text-xs text-slate-500">In corso / Completato</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card Filosofia Embedded & Web -->
+          <div
+            class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl backdrop-blur-xl shadow-lg"
+          >
+            <h4
+              class="text-lg font-semibold text-slate-200 mb-3 flex items-center gap-2"
+            >
+              <box-icon name="code-alt" class="fill-purple-400 w-5 h-5"
+              ></box-icon> Il mio Focus
+            </h4>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Avendo un background orientato ai sistemi **Embedded** (C/C++,
+              microcontrollori, hardware), porto la stessa mentalità di
+              efficienza, gestione della memoria e zero sprechi anche nel mondo
+              del **Web Development** moderno con strumenti come Astro e
+              Tailwind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Sezione Progetti -->
   <section id="projects" class="min-h-screen"></section>
