@@ -9,7 +9,9 @@ html {
     overflow-y: auto;
     
 }
-
+nav{
+    opacity: 1;
+}
 
 body {
     font-family: 'Inter', sans-serif;
