@@ -6,293 +6,301 @@ const nome = "Riccardo";
 
 <Layout title="Riccardo Developer Portfolio">
   <!-- Navbar -->
+  <html>
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+      <script src="../script/navbar.js"></script>
+    </head>
 
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <script src="../script/navbar.js"></script>
-  </head>
-
-  <nav class="fixed top-0 left-0 w-full z-50 p-4">
-    <div class="w-full flex justify-center items-center">
-      <div
-        class="w-[65%] md:w-[35%] lg:w-[22%] flex justify-between items-center bg-slate-900/50 backdrop-blur-xl p-1 px-8 rounded-full relative shadow-lg"
-      >
-        <a
-          href="#"
-          id="home"
-          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-white cursor-pointer transition-color duration-500 ease-in-out"
-        >
-          <box-icon
-            name="home"
-            id="home-bg"
-            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
-          ></box-icon>
-          <box-icon name="home" animation="tada-hover" class="z-10"></box-icon>
-        </a>
-
-        <a
-          href="#about"
-          id="info"
-          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
-        >
-          <box-icon
-            name="info-circle"
-            id="info-bg"
-            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
-          ></box-icon>
-          <box-icon name="info-circle" animation="tada-hover" class="z-10"
-          ></box-icon>
-        </a>
-
-        <a
-          href="#projects"
-          id="project"
-          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
-        >
-          <box-icon
-            name="folder"
-            id="projects-bg"
-            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
-          ></box-icon>
-          <box-icon name="folder" animation="tada-hover" class="z-10"
-          ></box-icon>
-        </a>
-
-        <a
-          href="#contacts"
-          id="contacts"
-          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
-        >
-          <box-icon
-            name="envelope"
-            id="contacts-bg"
-            class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
-          ></box-icon>
-          <box-icon name="envelope" animation="tada-hover" class="z-10"
-          ></box-icon>
-        </a>
-
+    <nav class="fixed top-0 left-0 w-full z-50 p-4">
+      <div class="w-full flex justify-center items-center">
         <div
-          id="selector"
-          class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full bg-[#131217] absolute left-0 transition duration-500 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
-          style="transform: translateX(32px);"
+          class="w-[65%] md:w-[35%] lg:w-[22%] flex justify-between items-center bg-slate-900/50 backdrop-blur-xl p-1 px-8 rounded-full relative shadow-lg"
         >
+          <a
+            href="#"
+            id="home"
+            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-white cursor-pointer transition-color duration-500 ease-in-out"
+          >
+            <box-icon
+              name="home"
+              id="home-bg"
+              class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+            ></box-icon>
+            <box-icon name="home" animation="tada-hover" class="z-10"
+            ></box-icon>
+          </a>
+
+          <a
+            href="#about"
+            id="info"
+            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          >
+            <box-icon
+              name="info-circle"
+              id="info-bg"
+              class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+            ></box-icon>
+            <box-icon name="info-circle" animation="tada-hover" class="z-10"
+            ></box-icon>
+          </a>
+
+          <a
+            href="#projects"
+            id="project"
+            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          >
+            <box-icon
+              name="folder"
+              id="projects-bg"
+              class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+            ></box-icon>
+            <box-icon name="folder" animation="tada-hover" class="z-10"
+            ></box-icon>
+          </a>
+
+          <a
+            href="#contacts"
+            id="contacts"
+            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          >
+            <box-icon
+              name="envelope"
+              id="contacts-bg"
+              class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+            ></box-icon>
+            <box-icon name="envelope" animation="tada-hover" class="z-10"
+            ></box-icon>
+          </a>
+
+          <div
+            id="selector"
+            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full bg-[#131217] absolute left-0 transition duration-500 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
+            style="transform: translateX(32px);"
+          >
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <section
-    class="h-screen flex flex-col items-center justify-center text-center px-4"
-  >
-    <h1 class="text-6xl md:text-8xl font-bold tracking-tight">
-      Riccardo Adami
-    </h1>
-
-    <h2 class="text-lg md:text-2xl text-slate-300 mt-3">
-      Embedded & Web Developer
-    </h2>
-
-    <p
-      class="text-base md:text-xl text-slate-400 max-w-xl mt-6 leading-relaxed"
+    <!-- Hero Section -->
+    <section
+      class="h-screen flex flex-col items-center justify-center text-center px-4"
     >
-      Lavoro su sistemi embedded e sto iniziando a creare interfacce web
-      moderne.
-      <span class="block mt-2">
-        Focus su performance, efficienza e software leggero.
-      </span>
-    </p>
+      <h1 class="text-6xl md:text-8xl font-bold tracking-tight">
+        Riccardo Adami
+      </h1>
 
-    <a
-      href="#about"
-      class="mt-16 gap-10 md:gap-16 w-12 h-12 flex items-center justify-center rounded-full
+      <h2 class="text-lg md:text-2xl text-slate-300 mt-3">
+        Embedded & Web Developer
+      </h2>
+
+      <p
+        class="text-base md:text-xl text-slate-400 max-w-xl mt-6 leading-relaxed"
+      >
+        Lavoro su sistemi embedded e sto iniziando a creare interfacce web
+        moderne.
+        <span class="block mt-2">
+          Focus su performance, efficienza e software leggero.
+        </span>
+      </p>
+
+      <a
+        href="#about"
+        class="mt-16 gap-10 md:gap-16 w-12 h-12 flex items-center justify-center rounded-full
           bg-white/5 backdrop-blur-xl border border-white/10
           hover:bg-white/10 transition"
-    >
-      <title>arrow</title>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-5 h-5 text-slate-200 animate-bounce"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </a>
-  </section>
-
-  <!-- Sezione Info -->
-  <section id="about" class="min-h-screen pt-32 pb-16 text-white px-4 md:px-8">
-    <div class="max-w-4xl mx-auto">
-      <!-- Intestazione Sezione -->
-      <div class="mb-16 text-center md:text-left">
-        <h2
-          class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-2"
+        <title>arrow</title>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 text-slate-200 animate-bounce"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          Il mio percorso
-        </h2>
-        <h3 class="text-4xl font-bold tracking-tight">
-          Esperienza ed Istruzione
-        </h3>
-      </div>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </a>
+    </section>
 
-      <!-- Griglia Principale: Timeline a sinistra, Card a destra -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <!-- Colonna Timeline (Senza sfondi aggiuntivi) -->
-        <div
-          class="md:col-span-2 space-y-12 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-[2px] before:bg-slate-800"
-        >
-          <!-- Blocco 1: Scuola -->
-          <div class="relative pl-10 group">
-            <!-- Pallino della Timeline -->
-            <div
-              class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-blue-500 border-4 border-slate-950 group-hover:scale-125 transition"
-            >
-            </div>
-
-            <div class="flex items-center gap-3 mb-1">
-              <span
-                class="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-medium border border-blue-500/20"
-                >In Corso</span
-              >
-              <span class="text-sm text-slate-400">2026 — Presente</span>
-            </div>
-            <h4 class="text-xl font-semibold text-slate-100">
-              Quarta Superiore Tecnico in Informatica
-            </h4>
-            <p class="text-sm text-slate-400 font-medium mb-3">
-              ITT G. Marconi - Rovereto
-            </p>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Sto affrontando l'indirizzo informatico focalizzato sull'analisi,
-              progettazione di sistemi software complessi, gestione delle reti,
-              telecomunicazioni e sistemi esperti. Questo percorso mi sta dando
-              le basi metodologiche sia per il software leggero che per
-              l'integrazione con i sistemi fisici.
-            </p>
-          </div>
-
-          <!-- Blocco 2: Stage Estivo / Alternanza -->
-          <div class="relative pl-10 group">
-            <div
-              class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-emerald-500 border-4 border-slate-950 group-hover:scale-125 transition"
-            >
-            </div>
-
-            <div class="flex items-center gap-3 mb-1">
-              <span
-                class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-medium border border-emerald-500/20"
-                >Completato</span
-              >
-              <span class="text-sm text-slate-400">Estate 2026</span>
-            </div>
-            <h4 class="text-xl font-semibold text-slate-100">
-              Tirocinio Formativo (Sviluppo Software)
-            </h4>
-            <p class="text-sm text-slate-400 font-medium mb-3">
-              Europe Exchange Spagna
-            </p>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Esperienza all'estero situato in Torrox Costa, Spagna, tramite
-              agenzia Europe Exchange, 14 giorni, di cui 10 lavorativi,
-              incentrati sulla formazione in campi come eletronica, MCU
-              (arduino, esp), sistemi esperti e basi di meccanica e automazione.
-            </p>
-          </div>
-
-          <!-- Blocco 3: Progetti Extra o Scolastici -->
-          <div class="relative pl-10 group">
-            <div
-              class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-purple-500 border-4 border-slate-950 group-hover:scale-125 transition"
-            >
-            </div>
-
-            <div class="flex items-center gap-3 mb-1">
-              <span
-                class="text-xs px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 font-medium border border-purple-500/20"
-                >Progetto</span
-              >
-              <span class="text-sm text-slate-400">Anno 2024-2026</span>
-            </div>
-            <h4 class="text-xl font-semibold text-slate-100">
-              Lan Party / Fermi MasterClass
-            </h4>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Lan Party - creazione di un videogioco tramite la piattaforma
-              Unity
-            </p>
-            <p class="text-sm text-slate-400 font-medium mb-3">
-              Gestione rete locale per creazione lobby virtuale e istanza di gioco condivisa
-            </p>
-          </div>
+    <!-- Sezione Info -->
+    <section
+      id="about"
+      class="min-h-screen pt-32 pb-16 text-white px-4 md:px-8"
+    >
+      <div class="max-w-4xl mx-auto">
+        <!-- Intestazione Sezione -->
+        <div class="mb-16 text-center md:text-left">
+          <h2
+            class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-2"
+          >
+            Il mio percorso
+          </h2>
+          <h3 class="text-4xl font-bold tracking-tight">
+            Esperienza ed Istruzione
+          </h3>
         </div>
 
-        <!-- Colonna Laterale: Card in stile Navbar (bg-slate-900/60 + blur) -->
-        <div class="space-y-8">
-          <!-- Card Certificazioni -->
+        <!-- Griglia Principale: Timeline a sinistra, Card a destra -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Colonna Timeline (Senza sfondi aggiuntivi) -->
           <div
-            class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl backdrop-blur-xl shadow-lg"
+            class="md:col-span-2 space-y-12 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-[2px] before:bg-slate-800"
           >
-            <h4
-              class="text-lg font-semibold text-slate-200 mb-4 flex items-center gap-2"
-            >
-              <box-icon name="award" class="fill-blue-400 w-5 h-5"></box-icon> Certificazioni
-            </h4>
-            <ul class="space-y-4">
-              <li class="border-l-2 border-blue-500 pl-3">
-                <p class="text-sm font-medium text-slate-200">Cisco CCNA</p>
-                <p class="text-xs text-slate-500">Networking Academy</p>
-                <p class="text-xs text-slate-500">In corso</p>
-              </li>
-              <li class="border-l-2 border-blue-500 pl-3">
-                <p class="text-sm font-medium text-slate-200">
-                  Cambridge B2 certificate
-                </p>
-                <p class="text-xs text-slate-500">Completato</p>
-              </li>
-            </ul>
+            <!-- Blocco 1: Scuola -->
+            <div class="relative pl-10 group">
+              <!-- Pallino della Timeline -->
+              <div
+                class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-blue-500 border-4 border-slate-950 group-hover:scale-125 transition"
+              >
+              </div>
+
+              <div class="flex items-center gap-3 mb-1">
+                <span
+                  class="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-medium border border-blue-500/20"
+                  >In Corso</span
+                >
+                <span class="text-sm text-slate-400">2026 — Presente</span>
+              </div>
+              <h4 class="text-xl font-semibold text-slate-100">
+                Quarta Superiore Tecnico in Informatica
+              </h4>
+              <p class="text-sm text-slate-400 font-medium mb-3">
+                ITT G. Marconi - Rovereto
+              </p>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Sto affrontando l'indirizzo informatico focalizzato
+                sull'analisi, progettazione di sistemi software complessi,
+                gestione delle reti, telecomunicazioni e sistemi esperti. Questo
+                percorso mi sta dando le basi metodologiche sia per il software
+                leggero che per l'integrazione con i sistemi fisici.
+              </p>
+            </div>
+
+            <!-- Blocco 2: Stage Estivo / Alternanza -->
+            <div class="relative pl-10 group">
+              <div
+                class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-emerald-500 border-4 border-slate-950 group-hover:scale-125 transition"
+              >
+              </div>
+
+              <div class="flex items-center gap-3 mb-1">
+                <span
+                  class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-medium border border-emerald-500/20"
+                  >Completato</span
+                >
+                <span class="text-sm text-slate-400">Estate 2026</span>
+              </div>
+              <h4 class="text-xl font-semibold text-slate-100">
+                Tirocinio Formativo (Sviluppo Software)
+              </h4>
+              <p class="text-sm text-slate-400 font-medium mb-3">
+                Europe Exchange Spagna
+              </p>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Esperienza all'estero situato in Torrox Costa, Spagna, tramite
+                agenzia Europe Exchange, 14 giorni, di cui 10 lavorativi,
+                incentrati sulla formazione in campi come eletronica, MCU
+                (arduino, esp), sistemi esperti e basi di meccanica e
+                automazione.
+              </p>
+            </div>
+
+            <!-- Blocco 3: Progetti Extra o Scolastici -->
+            <div class="relative pl-10 group">
+              <div
+                class="absolute left-1.5 top-2 w-3 h-3 rounded-full bg-purple-500 border-4 border-slate-950 group-hover:scale-125 transition"
+              >
+              </div>
+
+              <div class="flex items-center gap-3 mb-1">
+                <span
+                  class="text-xs px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 font-medium border border-purple-500/20"
+                  >Progetto</span
+                >
+                <span class="text-sm text-slate-400">Anno 2024-2026</span>
+              </div>
+              <h4 class="text-xl font-semibold text-slate-100">
+                Lan Party / Fermi MasterClass
+              </h4>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Lan Party - creazione di un videogioco tramite la piattaforma
+                Unity
+              </p>
+              <p class="text-sm text-slate-400 font-medium mb-3">
+                Gestione rete locale per creazione lobby virtuale e istanza di
+                gioco condivisa
+              </p>
+            </div>
           </div>
 
-          <!-- Card Filosofia Embedded & Web -->
-          <div
-            class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl backdrop-blur-xl shadow-lg"
-          >
-            <h4
-              class="text-lg font-semibold text-slate-200 mb-3 flex items-center gap-2"
+          <!-- Colonna Laterale: Card in stile Navbar (bg-slate-900/60 + blur) -->
+          <div class="space-y-8">
+            <!-- Card Certificazioni -->
+            <div
+              class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl backdrop-blur-xl shadow-lg"
             >
-              <box-icon name="code-alt" class="fill-purple-400 w-5 h-5"
-              ></box-icon> Il mio Focus
-            </h4>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              Avendo un background orientato ai sistemi <strong>Embedded</strong> (C/Rust,
-              microcontrollori, hardware), porto la stessa mentalità di
-              efficienza, gestione della memoria e zero sprechi anche nel mondo
-              del <strong>Web Development</strong> moderno con strumenti come Astro e
-              Tailwind.
-            </p>
+              <h4
+                class="text-lg font-semibold text-slate-200 mb-4 flex items-center gap-2"
+              >
+                <box-icon name="award" class="fill-blue-400 w-5 h-5"></box-icon> Certificazioni
+              </h4>
+              <ul class="space-y-4">
+                <li class="border-l-2 border-blue-500 pl-3">
+                  <p class="text-sm font-medium text-slate-200">Cisco CCNA</p>
+                  <p class="text-xs text-slate-500">Networking Academy</p>
+                  <p class="text-xs text-slate-500">In corso</p>
+                </li>
+                <li class="border-l-2 border-blue-500 pl-3">
+                  <p class="text-sm font-medium text-slate-200">
+                    Cambridge B2 certificate
+                  </p>
+                  <p class="text-xs text-slate-500">Completato</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Card Filosofia Embedded & Web -->
+            <div
+              class="bg-slate-900/60 border border-white/10 p-6 rounded-2xl backdrop-blur-xl shadow-lg"
+            >
+              <h4
+                class="text-lg font-semibold text-slate-200 mb-3 flex items-center gap-2"
+              >
+                <box-icon name="code-alt" class="fill-purple-400 w-5 h-5"
+                ></box-icon> Il mio Focus
+              </h4>
+              <p class="text-slate-400 text-xs leading-relaxed">
+                Avendo un background orientato ai sistemi <strong
+                  >Embedded</strong
+                > (C/Rust, microcontrollori, hardware), porto la stessa mentalità
+                di efficienza, gestione della memoria e zero sprechi anche nel mondo
+                del <strong>Web Development</strong> moderno con strumenti come Astro
+                e Tailwind.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Sezione Progetti -->
-  <section id="projects" class="min-h-screen"></section>
-  <!-- Card Progetto 1: IdroStoria (Sito dell'acqua) -->
+    </section>
+    <!-- Sezione Progetti -->
+    <section id="projects" class="min-h-screen"></section>
+    <!-- Card Progetto 1: IdroStoria (Sito dell'acqua) -->
 
-  <!-- Card Progetto 2: Servizio Freelance -->
+    <!-- Card Progetto 2: Servizio Freelance -->
 
-  <!-- Sezione Contatti -->
+    <!-- Sezione Contatti -->
 
-  <!-- Footer -->
+    <!-- Footer -->
+  </html>
 </Layout>
