@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+  const active = document.querySelector(".nav-btn.active");
+  if (active) moveSelector(active);
+});
+
 const buttons = document.querySelectorAll(".nav-btn");
 const selector = document.getElementById("selector");
 
@@ -14,13 +19,20 @@ function triggerBgAnimation(bgIcon) {
   }, 1);
 }
 
+function moveSelector(btn) {
+  const parentLeft = btn.parentElement.getBoundingClientRect().left;
+  const btnLeft = btn.getBoundingClientRect().left;
+  const exactX = btnLeft - parentLeft;
+
+  selector.style.transform = `translateX(${exactX}px)`;
+}
+
 buttons.forEach((btn) => {
   btn.addEventListener("click", function () {
-    // 1. Posizione selector
-    const parentLeft = btn.parentElement.getBoundingClientRect().left;
-    const btnLeft = btn.getBoundingClientRect().left;
-    const exactX = btnLeft - parentLeft;
-    selector.style.transform = `translateX(${exactX}px)`;
+    buttons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    // 1 posizione selector
+    moveSelector(btn);
 
     // 2. Colori
     buttons.forEach((b) => {
@@ -55,6 +67,11 @@ buttons.forEach((btn) => {
   document.getElementById("contacts").addEventListener("click", () => {
     document.getElementById("contacts").scrollIntoView({ behavior: "smooth" });
   });
+});
 
-
+window.addEventListener("resize", () => {
+  const active = document.querySelector(".nav-btn.active");
+  if (active) {
+    moveSelector(active);
+  }
 });
