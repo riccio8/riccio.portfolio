@@ -61,6 +61,9 @@ buttons.forEach((btn) => {
   document.getElementById("home").addEventListener("click", () => {
     document.getElementById("home").scrollIntoView({ behavior: "smooth" });
   });
+  document.getElementById("skills").addEventListener("click", () => {
+    document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+  });
   document.getElementById("project").addEventListener("click", () => {
     document.getElementById("project").scrollIntoView({ behavior: "smooth" });
   });
