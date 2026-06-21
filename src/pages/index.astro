@@ -6,17 +6,6 @@ const nome = "Riccardo";
 
 <Layout title="Riccardo Developer Portfolio">
   <!-- Navbar -->
-  <html>
-    <head>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-        rel="stylesheet"
-      />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-      <script src="../script/navbar.js"></script>
-    </head>
-
     <nav class="fixed top-0 left-0 w-full z-50 p-4">
       <div class="w-full flex justify-center items-center">
         <div
@@ -51,6 +40,20 @@ const nome = "Riccardo";
           </a>
 
           <a
+            href="#competenze"
+            id="skills"
+            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
+          >
+            <box-icon
+              name="code-alt"
+              id="contacts-bg"
+              class="nav-btn absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
+            ></box-icon>
+            <box-icon name="code-alt" animation="tada-hover" class="z-10"
+            ></box-icon>
+          </a>
+
+          <a
             href="#projects"
             id="project"
             class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
@@ -65,22 +68,8 @@ const nome = "Riccardo";
           </a>
 
           <a
-            href="#competenze"
-            id="skills"
-            class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
-          >
-            <box-icon
-              name="code-alt"
-              id="contacts-bg"
-              class="absolute fill-[#75747A] transition duration-1000 ease-in-out hidden"
-            ></box-icon>
-            <box-icon name="code-alt" animation="tada-hover" class="z-10"
-            ></box-icon>
-          </a>
-
-          <a
             href="#contacts"
-            id="contacts"
+            id="contact"
             class="nav-btn w-[60px] h-[60px] flex justify-center items-center rounded-full z-10 fill-[#75747A] cursor-pointer transition-color duration-500 ease-in-out"
           >
             <box-icon
@@ -316,10 +305,24 @@ const nome = "Riccardo";
     <!-- Sezione Competenze -->
     <section
       id="competenze"
-      class="min-h-screen pt-32 pb-16 text-white px-4 md:px-8"
+      class="min-h-screen pt-32 pb-16 text-white px-6 md:px-8"
     >
+      <div class="flex justify-center p-4 w-full">
+        <!-- 1. CARTA ESTERNA -->
+        <div
+          class="w-full max-w-md overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-[#0d1117]"
+        >
+          <!-- 2. IFRAME  -->
+          <iframe
+            src="https://github.cards/riccio8?template=Receipt"
+            title="GitHub Activity Receipt"
+            class="w-full h-[650px] border-none block"
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
     </section>
-
 
     <!-- Sezione Progetti -->
     <section
@@ -338,11 +341,8 @@ const nome = "Riccardo";
     >
     </section>
 
-
-    <footer>
-      riccioadami@gmail.com
-    </footer>
+    <footer>riccioadami@gmail.com</footer>
 
     <!-- Footer -->
-  </html>
+
 </Layout>
